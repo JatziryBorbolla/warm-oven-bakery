@@ -1,0 +1,175 @@
+/* Warm Oven Bakery - Global Stylesheet */
+
+:root {
+    --primary-color: #5c3a21;      /* Warm brown */
+    --accent-color: #d97724;       /* Bakery warm orange/amber */
+    --bg-color: #fdfbf7;           /* Warm off-white */
+    --card-bg: #ffffff;            /* Pure white for containers */
+    --text-color: #2b2b2b;          /* Dark charcoal for high contrast readability */
+    --border-color: #e2d7cd;        /* Soft neutral border */
+}
+
+/* Base Body & Layout */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--card-bg);
+    border-bottom: 2px solid var(--border-color);
+    text-align: center;
+    padding: 1.5rem 1rem 1rem;
+}
+
+header img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* Typography & Headings */
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p, li {
+    font-size: 1.05rem;
+}
+
+/* Content Sections & Cards */
+section {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+}
+
+/* Images & Figures */
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666666;
+    margin-top: 0.5rem;
+}
+
+/* Form Controls */
+form fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+form legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+label {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin-top: 3rem;
+}
