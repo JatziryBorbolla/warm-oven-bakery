@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Pre-Orders | Warm Oven Bakery</title>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <img src="bakery/bakery-logo.png" alt="Warm Oven Bakery Logo" width="180">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact & Pre-Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact & Pre-Orders</h1>
+        <p>Have a question or want to reserve your favorite items in advance? Fill out the form below and our team will get back to you to confirm your request!</p>
+
+        <!-- Pre-Order & Inquiry Form -->
+        <section>
+            <h2>Inquiry and Pre-Order Request Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <div>
+                        <label for="full-name">Full Name *</label><br>
+                        <input type="text" id="full-name" name="full_name" required placeholder="Jane Doe">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="email">Email Address *</label><br>
+                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                    </div>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Order Details</legend>
+                    
+                    <div>
+                        <label for="request-type">Request Type *</label><br>
+                        <select id="request-type" name="request_type" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="pre-order">Pre-Order Pick Up</option>
+                            <option value="custom-cake">Custom Cake Inquiry</option>
+                            <option value="general-question">General Question</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="pickup-date">Desired Pickup Date</label><br>
+                        <input type="date" id="pickup-date" name="pickup_date">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="item-details">Item Details / Order Request *</label><br>
+                        <textarea id="item-details" name="item_details" rows="5" cols="40" required placeholder="Please specify items, quantities, or details about your inquiry..."></textarea>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="allergy-notes">Allergy & Dietary Notes</label><br>
+                        <textarea id="allergy-notes" name="allergy_notes" rows="3" cols="40" placeholder="Please list any allergies (e.g., nut allergy, dairy sensitivity)..."></textarea>
+                    </div>
+                </fieldset>
+                <br>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Location Information & Hours -->
+        <section>
+            <h2>Location & Hours of Operation</h2>
+            <p><strong>Address:</strong> 123 Maple Street, Neighborhood Square</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> hello@warmovenbakery.com</p>
+
+            <h3>Hours of Operation</h3>
+            <ul>
+                <li><strong>Tuesday – Friday:</strong> 6:30 AM – 4:00 PM</li>
+                <li><strong>Saturday – Sunday:</strong> 7:00 AM – 3:00 PM</li>
+                <li><strong>Monday:</strong> Closed</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Warm Oven Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
