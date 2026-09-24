@@ -107,3 +107,46 @@
 
 </body>
 </html>
+<!-- Interactive Estimator -->
+<section class="estimator-section">
+  <h2>Interactive Pre-Order Estimator</h2>
+  <form id="estimator-form">
+    <label for="product-select">Select Bakery Item:</label>
+    <select id="product-select"></select>
+
+    <label for="quantity-input">Quantity:</label>
+    <input type="number" id="quantity-input" value="1" min="1" max="50">
+
+    <p class="estimate-result">Estimated Total: <strong id="total-price">$0.00</strong></p>
+  </form>
+</section>
+
+<!-- Contact & Pre-Order Form -->
+<section class="contact-section">
+  <h2>Pre-Order Request</h2>
+  <form id="contact-form" novalidate>
+    <!-- Full Name -->
+    <div class="form-group">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname">
+      <span class="error-message" id="fullname-error"></span>
+    </div>
+
+    <!-- Email Address -->
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email">
+      <span class="error-message" id="email-error"></span>
+    </div>
+
+    <!-- Message / Order Details -->
+    <div class="form-group">
+      <label for="message">Order Details & Notes:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      <span class="error-message" id="message-error"></span>
+    </div>
+
+    <button type="submit" id="submit-btn">Submit Pre-Order</button>
+    <p id="form-success" class="success-message"></p>
+  </form>
+</section>
